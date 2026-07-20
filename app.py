@@ -177,7 +177,7 @@ def generate_compliment(name_or_trait: str, api_key: str) -> str:
 def main():
     st.set_page_config(
         page_title="Micro-Compliment Generator",
-        page_icon="✨",
+        page_icon=None,
         layout="centered",
     )
     st.markdown(_CSS, unsafe_allow_html=True)
@@ -186,7 +186,7 @@ def main():
     st.markdown(
         """
         <div class="hero">
-            <h1>✨ Micro-Compliment Generator</h1>
+            <h1>Micro-Compliment Generator</h1>
             <p>Enter a name or trait and receive an instant, personalised compliment.</p>
         </div>
         """,
@@ -216,23 +216,23 @@ def main():
         placeholder="e.g. Sarah, curious, dog lover, great listener…",
     )
 
-    if st.button("✨ Generate Compliment", use_container_width=True):
+    if st.button("Generate Compliment", use_container_width=True):
         if name_or_trait.strip():
             with st.spinner("Crafting your compliment…"):
                 try:
                     compliment = generate_compliment(name_or_trait.strip(), api_key)
                     st.markdown(
-                        f'<div class="compliment-card">💬 {compliment}</div>',
+                        f'<div class="compliment-card">{compliment}</div>',
                         unsafe_allow_html=True,
                     )
                 except ValueError as exc:
                     st.markdown(
-                        f'<div class="error-card">⚠️ {exc}</div>',
+                        f'<div class="error-card">Error: {exc}</div>',
                         unsafe_allow_html=True,
                     )
                 except Exception:
                     st.markdown(
-                        '<div class="error-card">⚠️ Unable to generate a compliment. '
+                        '<div class="error-card">Unable to generate a compliment. '
                         "Please check your API key and try again.</div>",
                         unsafe_allow_html=True,
                     )
