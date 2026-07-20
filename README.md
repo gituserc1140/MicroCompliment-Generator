@@ -1,4 +1,4 @@
-# ✨ Micro-Compliment Generator
+# Micro-Compliment Generator
 
 > Instantly generate a short, personalised compliment for any name or trait — powered by [Groq](https://console.groq.com) and built with [Streamlit](https://streamlit.io).
 
@@ -13,10 +13,10 @@ Type a name, a personality trait, or anything you want to celebrate (e.g. *"Sara
 
 ## Features
 
-- 🔑 **Frontend API key input** — paste your Groq key directly in the sidebar; no config files needed
-- ⚡ **Instant results** — powered by `llama-3.1-8b-instant` through Groq's ultra-fast inference
-- 🎨 **Polished dark UI** — gradient background, styled cards, and responsive layout
-- 🔗 **GitHub & Sponsor buttons** — easily accessible from the sidebar
+- **Frontend API key input** — paste your Groq key directly in the sidebar; no config files needed
+- **Instant results** — powered by `llama-3.1-8b-instant` through Groq's ultra-fast inference
+- **Polished dark UI** — gradient background, styled cards, and responsive layout
+- **GitHub & Sponsor buttons** — easily accessible from the sidebar
 
 ---
 
@@ -55,7 +55,7 @@ The app opens at `http://localhost:8501`.
 1. Open the app in your browser.
 2. In the **sidebar**, paste your **Groq API key** into the password field.
 3. In the main area, type a **name or trait** in the text box (e.g. *"Emma"*, *"adventurous"*, *"always early"*).
-4. Click **✨ Generate Compliment**.
+4. Click **Generate Compliment**.
 5. Your personalised compliment appears instantly in the card below.
 
 ---
@@ -100,4 +100,4 @@ Issues and pull requests are welcome! Please open an issue first to discuss any 
 
 ## Support this project
 
-If you find this app useful, consider [sponsoring the author](https://github.com/sponsors/gituserc1140) on GitHub. 💜
+If you find this app useful, consider [sponsoring the author](https://github.com/sponsors/gituserc1140) on GitHub.
