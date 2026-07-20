@@ -168,7 +168,10 @@ def generate_compliment(name_or_trait: str, api_key: str) -> str:
         max_tokens=40,
         temperature=0.9,
     )
-    return response.choices[0].message.content.strip().strip('"')
+    content = response.choices[0].message.content
+    if not content:
+        raise ValueError("The model returned an empty response. Please try again.")
+    return content.strip().strip('"')
 
 
 def main():
@@ -222,9 +225,15 @@ def main():
                         f'<div class="compliment-card">💬 {compliment}</div>',
                         unsafe_allow_html=True,
                     )
-                except Exception as exc:
+                except ValueError as exc:
                     st.markdown(
                         f'<div class="error-card">⚠️ {exc}</div>',
+                        unsafe_allow_html=True,
+                    )
+                except Exception:
+                    st.markdown(
+                        '<div class="error-card">⚠️ Unable to generate a compliment. '
+                        "Please check your API key and try again.</div>",
                         unsafe_allow_html=True,
                     )
         else:
