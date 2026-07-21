@@ -201,6 +201,11 @@ def main():
         placeholder="gsk_…",
         help="Get a free key at console.groq.com — no credit card required.",
     )
+    st.sidebar.markdown(
+        '<small><a href="https://console.groq.com/keys" target="_blank" '
+        'style="color:#a78bfa;text-decoration:none;">🔑 Get a free API key</a></small>',
+        unsafe_allow_html=True,
+    )
     st.sidebar.markdown("---")
     st.sidebar.markdown(_SIDEBAR_LINKS, unsafe_allow_html=True)
 
