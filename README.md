@@ -2,7 +2,7 @@
 
 > Instantly generate a short, personalised compliment for any name or trait — powered by [Groq](https://console.groq.com) and built with [Streamlit](https://streamlit.io).
 
-[![GitHub](https://img.shields.io/badge/GitHub-View_Source-24292f?logo=github)](https://github.com/gituserc1140/MicroCompliment-Generator)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://microcompliment-generator-ndugstlpbqiu7g5233glub.streamlit.app/)
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-bf4b8a?logo=github-sponsors)](https://github.com/sponsors/gituserc1140)
 
 ---
